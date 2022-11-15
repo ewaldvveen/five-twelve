@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dff5363a-2aac-4d73-ac31-cd8c67888af2/deploy-status)](https://app.netlify.com/sites/five-twelve/deploys)
+
 # FiveTwelve
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
