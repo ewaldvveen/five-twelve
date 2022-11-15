@@ -1,8 +1,12 @@
-<div *ngIf="quiz">
-  <h2>{{quiz.title | uppercase}}</h2>
-  <div>id: {{quiz.id}}</div>
+<div *ngIf="selectedQuiz">
+  <h2>{{selectedQuiz.title | uppercase}}</h2>
+  <div>id: {{selectedQuiz.id}}</div>
   <div>
     <label for="quiz-title">Quiz titel: </label>
-    <input id="quiz-title" [(ngModel)]="quiz.title" placeholder="title">
+    <input id="quiz-title" [(ngModel)]="selectedQuiz.title" placeholder="title">
   </div>
 </div>
+
+<button type="button" (click)="goBack()">
+  Terug
+</button>

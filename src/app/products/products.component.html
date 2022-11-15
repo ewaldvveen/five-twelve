@@ -1,0 +1,6 @@
+<h2>Nieuwste quizzen</h2>
+<div class="products-latest">
+  <a *ngFor="let quiz of latestQuizzes" routerLink="/quiz/{{ quiz.id }}">
+    {{ quiz.title }}
+  </a>
+</div>

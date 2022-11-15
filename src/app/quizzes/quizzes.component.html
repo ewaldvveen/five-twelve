@@ -1,11 +1,8 @@
 <h2>Quiz overzicht</h2>
 <ul class="quiz-list">
   <li *ngFor="let quiz of quizzes$ | async">
-    <button type="button" (click)="onSelect(quiz)" [class.selected]="quiz === selectedQuiz">
-      <span class="badge">{{quiz.id}}</span>
-      <span class="title">{{quiz.title}}</span>
-    </button>
+    <a routerLink="/quiz/{{ quiz.id }}">
+      <span class="badge">{{ quiz.title }}</span>
+    </a>
   </li>
 </ul>
-
-<ft-quiz-detail [quiz]="selectedQuiz"></ft-quiz-detail>

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Quiz } from './models/quiz';
+import { Component } from '@angular/core';
 import { QuizService } from './services/quiz.service';
 
 @Component({
@@ -7,15 +6,8 @@ import { QuizService } from './services/quiz.service';
   templateUrl: './quizzes.component.html',
   styleUrls: ['./quizzes.component.scss']
 })
-export class QuizzesComponent implements OnInit {
+export class QuizzesComponent {
   quizzes$ = this.quizService.getQuizzes();
-  selectedQuiz?: Quiz;
 
   constructor(private quizService: QuizService) { }
-
-  ngOnInit(): void { }
-
-  onSelect(quiz: Quiz): void {
-    this.selectedQuiz = quiz;
-  }
 }
